@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-title {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.title {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.container-menu-finanzas {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid black;
+}
+
+.container-menu-finanzas a {
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.month {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 12px;
+}
+
+.month h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.container-ingreso-gastos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.ingreso-gastos h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.container-button-agregar {
+  height: auto;
+  display: flex;
+  justify-content: right;
+}
+
+.button-agregar {
+  width: 100px;
+  height: 40px;
+}
+
+.container-gastos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 10px;
+}
+
+.card {
+  width: 100%;
+  padding: 12px;
+  border: none;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: right;
+  padding: 10px 0 0 0;
+  gap: 10px;
+}
+
+.total {
+  width: 100%;
+  height: auto;
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 10px 10px 10px 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.total h1 {
+  margin-bottom: 0px;
+  font-size: 26px;
+}
+
+.container-grafico-gastos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 10px;
+}
+
+.grafico-gastos-titulo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+
+.grafico-gastos-titulo h2 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.grafico-gastos-categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 6px;
+}
+
+.grafico-gastos-categorias h4 {
+  margin-bottom: 0;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.categoria h4 {
+  min-width: 90px; /* Ancho fijo para todas las etiquetas */
+  margin: 0;
+  font-size: 16px;
+}
+
+.progress {
+  width: 700px; /* Ancho fijo para todas las barras */
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+}
+
+#footer {
+  width: 100%;
+  height: 10vh;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#footer h3 {
+  font-size: 16px;
+}

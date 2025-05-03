@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <title>Financify</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container-title">
+        <a class="title" href="./index.html">Financify</a>
+      </div>
+      <div class="container-menu-finanzas">
+        <a href="./calculadora-gastos.html">Calculadora de gastos</a>
+        <a href="">Conversiones</a>
+        <a href="">Simulador de cuotas</a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="month">
+        <h2>Mes:</h2>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecciona mes</option>
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+        </select>
+      </section>
+      <section class="container-ingreso-gastos">
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Fecha</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Ingreso/Gasto</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Categoria</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Monto</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label">Medio de pago</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="container-button-agregar">
+          <button type="button" class="btn btn-success">Agregar</button>
+        </div>
+      </section>
+      <section class="container-gastos">
+        <div class="card-body">
+          <h5 class="card-title">Gastos totales</h5>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Fecha: 3/5/25</li>
+            <li class="list-group-item">Ingreso/Gasto: Sueldo</li>
+            <li class="list-group-item">Categoria: Sueldo</li>
+            <li class="list-group-item">Monto: 1137</li>
+            <li class="list-group-item">Medio de pago: Debito</li>
+          </ul>
+          <div class="card-buttons">
+            <button type="button" class="btn btn-warning">Modificar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+          </div>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item fecha">Fecha: 3/5/25</li>
+            <li class="list-group-item">Ingreso/Gasto: Sueldo</li>
+            <li class="list-group-item">Categoria: Sueldo</li>
+            <li class="list-group-item">Monto: 1137</li>
+            <li class="list-group-item">Medio de pago: Debito</li>
+          </ul>
+          <div class="card-buttons">
+            <button type="button" class="btn btn-warning">Modificar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="total">
+          <h1>Total sobrante:</h1>
+          <h1>2274</h1>
+        </div>
+      </section>
+      <section class="container-grafico-gastos">
+        <div class="grafico-gastos-titulo">
+          <h2>Distribución de gastos por categoría</h2>
+        </div>
+        <div class="grafico-gastos-categorias">
+          <div class="categoria">
+            <h4>Comida</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Example with label"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 40%">40%</div>
+            </div>
+          </div>
+          <div class="categoria">
+            <h4>Transporte</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Transporte"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 30%">30%</div>
+            </div>
+          </div>
+
+          <div class="categoria">
+            <h4>Servicios</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Servicios"
+              aria-valuenow="20"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 30%">30%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div>
+        <h3>Finacify | Todos los derechos reservados</h3>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
