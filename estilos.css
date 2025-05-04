@@ -323,6 +323,80 @@ body {
   gap: 10px;
 }
 
+.container-titulo-simulador {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.tituo-simulador {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-calculo-simulador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 14px;
+  border: 2px solid grey;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.container-calculo-simulador h3 {
+  font-size: 18px;
+}
+
+.container-resultado-simulador {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border: 2px solid grey;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.titulo-resultado-simulador {
+  display: flex;
+  justify-content: center;
+}
+
+.montos-resultado-simulador h3 {
+  font-size: 18px;
+}
+
+.container-grafico-simulador {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border: 2px solid grey;
+  border-radius: 12px;
+  gap: 16px;
+}
+
+.container-grafico-simulador h2 {
+  font-size: 18px;
+}
+
+.container-titulo-grafico {
+  display: flex;
+  justify-content: center;
+}
+
+.tituo-grafico {
+  font-size: 24px;
+}
+
+.total-pagar-simulador {
+  margin: 0;
+}
+
 #footer {
   width: 100%;
   height: 10vh;
