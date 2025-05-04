@@ -14,53 +14,16 @@
   </head>
   <body>
     <header id="header">
-      <div class="container-title">
-        <a class="title" href="./index.html">Financify</a>
-      </div>
-      <div class="container-menu-finanzas">
-        <!-- Menú para pantallas grandes (desktop) -->
-        <div class="menu-desktop">
-          <ul>
-            <li>
-              <a href="./calculadora-gastos.html">Calculadora de gastos</a>
-            </li>
-            <li><a href="./conversiones.html">Conversiones</a></li>
-            <li><a href="./simulador-cuotas.html">Simulador de cuotas</a></li>
-          </ul>
-        </div>
-
-        <!-- Solo el dropdown para móvil - manteniendo tu estructura original -->
-        <div class="menu-mobile">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Menu
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./calculadora-gastos.html"
-                    >Calculadora de gastos</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./conversiones.html"
-                    >Conversiones</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./simulador-cuotas.html"
-                    >Simulador de cuotas</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+      <a href="./index.html" class="site-logo"> Financify </a>
+      <div class="menu-dropdown">
+        <button class="menu-button">Menú <span>▼</span></button>
+        <div class="menu-content">
+          <a href="./index.html" class="menu-item">Inicio</a>
+          <a href="./calculadora-gastos.html" class="menu-item">Calculadora</a>
+          <a href="./conversiones.html" class="menu-item">Conversor</a>
+          <a href="./simulador-cuotas.html" class="menu-item"
+            >Simulador cuotas</a
+          >
         </div>
       </div>
     </header>
