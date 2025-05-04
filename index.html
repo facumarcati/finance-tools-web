@@ -10,30 +10,81 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Financify</title>
   </head>
   <body>
     <header id="header">
-      <div class="container-title">
-        <a class="title" href="./index.html">Financify</a>
-      </div>
-      <div class="container-menu-finanzas">
-        <a href="./calculadora-gastos.html">Calculadora de gastos</a>
-        <a href="./conversiones.html">Conversiones</a>
-        <a href="./simulador-cuotas.html">Simulador de cuotas</a>
+      <a href="./index.html" class="site-logo"> Financify </a>
+      <div class="menu-dropdown">
+        <button class="menu-button">Menú <span>▼</span></button>
+        <div class="menu-content">
+          <a href="./index.html" class="menu-item">Inicio</a>
+          <a href="./calculadora-gastos.html" class="menu-item">Calculadora</a>
+          <a href="./conversiones.html" class="menu-item">Conversor</a>
+          <a href="./simulador-cuotas.html" class="menu-item"
+            >Simulador cuotas</a
+          >
+        </div>
       </div>
     </header>
     <main id="main">
       <section class="container-title-main">
         <div class="title-subtitle">
           <h1 class="title-main">FINANCIFY</h1>
-          <h3>Una forma simple de organizar tus finanzas</h3>
+          <p class="tagline">Una forma simple de organizar tus finanzas</p>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="container-features">
+        <div class="feature-card calculator">
+          <div class="feature-header">
+            <div class="feature-icon">📊</div>
+            <h2 class="feature-title">Calculadora de gastos</h2>
+          </div>
+          <p class="feature-description">
+            Gestioná tus ingresos y egresos mensuales fácilmente. Visualiza tu
+            flujo financiero con gráficos intuitivos.
+          </p>
+          <a href="./calculadora-gastos.html" class="feature-button"
+            >📱 Ir a la calculadora</a
+          >
+        </div>
+        <div class="feature-card converter">
+          <div class="feature-header">
+            <div class="feature-icon">💱</div>
+            <h2 class="feature-title">Conversor de monedas</h2>
+          </div>
+          <p class="feature-description">
+            Convertí entre monedas de forma rápida y sencilla. Tasas
+            actualizadas en tiempo real.
+          </p>
+          <a href="./conversiones.html" class="feature-button"
+            >🌐 Ir al conversor</a
+          >
+        </div>
+
+        <div class="feature-card savings">
+          <div class="feature-header">
+            <div class="feature-icon">💰</div>
+            <h2 class="feature-title">Simulador de ahorro</h2>
+          </div>
+          <p class="feature-description">
+            Planeá cuánto podés ahorrar con tus ingresos actuales. Establece
+            metas financieras alcanzables.
+          </p>
+          <a href="./simulador-cuotas.html" class="feature-button"
+            >🌐 Ir al simulador</a
+          >
         </div>
       </section>
     </main>
     <footer id="footer">
       <div>
-        <h3>Finacify | Todos los derechos reservados</h3>
+        <h3>© 2025 Financify - Todos los derechos reservados</h3>
       </div>
     </footer>
 
