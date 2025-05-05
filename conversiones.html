@@ -23,28 +23,35 @@
     </header>
     <main id="main">
       <section class="container-conversiones">
+        <div class="container-titulo-conversor">
+          <h1 class="titulo-calculo">Conversor de monedas</h1>
+        </div>
+        <div class="cantidad-conversion">
+          <h3>Cantidad:</h3>
+          <div class="cantidad-convertir">
+            <input
+              type="number"
+              id="amount"
+              class="form-control"
+              placeholder="0.00"
+              min="0"
+              step="0.01"
+              required
+            />
+          </div>
+        </div>
         <div class="tipo-conversion">
-          <h3>Tipo de conversion:</h3>
-          <select
-            class="form-select drop-down"
-            aria-label="Default select example"
-          >
+          <h3>De:</h3>
+          <select id="type" class="form-control">
             <option selected>[V] Moneda</option>
             <option value="1">ARS</option>
             <option value="2">USD</option>
             <option value="3">EUR</option>
           </select>
         </div>
-        <div class="cantidad-conversion">
-          <h3>Cantidad:</h3>
-          <input class="cant-conversion" type="text" name="" id="" />
-        </div>
         <div class="convertir-a">
-          <h3>Convertir a:</h3>
-          <select
-            class="drop-down form-select"
-            aria-label="Default select example"
-          >
+          <h3>A:</h3>
+          <select id="type" class="form-control">
             <option selected>[V] Moneda</option>
             <option value="1">ARS</option>
             <option value="2">USD</option>
@@ -52,9 +59,7 @@
           </select>
         </div>
         <div class="container-button-convertir">
-          <button type="button" class="btn btn-success btn-convertir">
-            Convertir
-          </button>
+          <button type="button" class="btn btn-primary">Convertir</button>
         </div>
       </section>
       <section class="container-resultado-conversion">
@@ -97,7 +102,7 @@
     </main>
     <footer id="footer">
       <div>
-        <h3>Financify | Todos los derechos reservados</h3>
+        <h3>© 2025 Financify - Todos los derechos reservados</h3>
       </div>
     </footer>
   </body>

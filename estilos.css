@@ -623,6 +623,15 @@ body {
   font-size: 26px;
 }
 
+.container-titulo-calculo {
+  width: 100%;
+  padding: 10px;
+}
+
+.titulo-calculo {
+  font-size: 28px;
+}
+
 .container-grafico-gastos {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -687,19 +696,56 @@ body {
   overflow: hidden;
 }
 
+.progress-stacked {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  overflow: hidden;
+}
+
+.progress:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.progress:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .progress-bar {
   height: 100%;
-  border-radius: 10px;
-  background-color: #1e88e5;
+}
+
+.grafico-datos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  gap: 6px;
+}
+
+.capital {
+  background-color: var(--success-color);
+}
+
+.interes {
+  background-color: var(--danger-color);
 }
 
 .container-conversiones {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  width: 100%;
   gap: 26px;
   padding: 14px;
-  border: 2px solid grey;
   border-radius: 12px;
 }
 
@@ -709,9 +755,11 @@ body {
 }
 
 .cantidad-conversion {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: end;
+  align-items: center;
 }
 
 .cant-conversion {
@@ -723,25 +771,33 @@ body {
   font-size: 20px;
 }
 
-.convertir-a {
-  width: 200px;
+.tipo-conversion {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 14px;
+}
+
+.convertir-a {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cantidad-convertir {
+  width: 80%;
 }
 
 .drop-down {
   width: 200px;
 }
 
-.btn-convertir {
-  width: 120px;
-  height: 40px;
-}
-
 .container-resultado-conversion {
+  width: 100%;
   padding: 14px;
-  border: 2px solid grey;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 }
 
@@ -760,15 +816,18 @@ body {
 }
 
 .container-tabla-valores-comunes {
+  width: 100%;
   padding: 14px 14px 6px 14px;
-  border: 2px solid grey;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 }
 
 .title-tabla-valores {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid grey;
+  border: 1px solid var(--border-color);
+  padding-bottom: 10px;
 }
 
 .title-tabla-valores h2 {
@@ -784,9 +843,10 @@ body {
 
 .container-moneda {
   padding: 14px;
-  border: 2px solid grey;
   border-radius: 12px;
   font-size: 18px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .container-moneda h2 {
@@ -809,6 +869,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding: 0 40px;
 }
 
 .tituo-simulador {
@@ -818,12 +879,14 @@ body {
 }
 
 .container-calculo-simulador {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 14px;
-  border: 2px solid grey;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   gap: 20px;
 }
@@ -832,11 +895,23 @@ body {
   font-size: 18px;
 }
 
+.calculo-simulador-monto,
+.calculo-simulador-interes,
+.calculo-simulador-cant-cuotas,
+.calculo-simulador-tipo-interes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 70%;
+}
+
 .container-resultado-simulador {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 14px;
-  border: 2px solid grey;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   gap: 20px;
 }
@@ -846,15 +921,32 @@ body {
   justify-content: center;
 }
 
+.montos-resultado-simulador {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
 .montos-resultado-simulador h3 {
   font-size: 18px;
 }
 
+.montos-resultado-simulador div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .container-grafico-simulador {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 14px;
-  border: 2px solid grey;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   gap: 16px;
 }
