@@ -681,7 +681,8 @@ body {
 }
 
 .titulo-calculo {
-  font-size: 28px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .container-grafico-gastos {
@@ -785,6 +786,7 @@ body {
   justify-content: space-between;
   padding-top: 6px;
   gap: 6px;
+  text-align: center;
 }
 
 .capital {
@@ -869,14 +871,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .resultado-conversion h2 {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .resultado-conversion h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .container-tabla-valores-comunes {
@@ -1132,6 +1136,18 @@ body {
 
   .detail-value {
     margin-top: 0.4rem;
+  }
+
+  .titulo-calculo {
+    font-size: 28px;
+  }
+
+  .resultado-conversion h2 {
+    font-size: 22px;
+  }
+
+  .resultado-conversion h3 {
+    font-size: 20px;
   }
 }
 
