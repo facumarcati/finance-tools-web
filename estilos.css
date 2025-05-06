@@ -476,7 +476,7 @@ body {
 }
 
 .form-control {
-  width: 80%;
+  width: 100%;
   padding: 0.75rem 1rem;
   border-radius: 6px;
   border: 1px solid var(--border-color);
@@ -818,7 +818,9 @@ body {
 
 .tipo-conversion h3,
 .convertir-a h3 {
-  font-size: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .cantidad-conversion {
@@ -826,7 +828,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
 }
 
 .cant-conversion {
@@ -835,14 +836,15 @@ body {
 
 .cantidad-conversion h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .tipo-conversion {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 14px;
 }
 
@@ -850,12 +852,11 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 14px;
 }
 
 .cantidad-convertir {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -1124,8 +1125,8 @@ body {
     align-items: flex-start;
     text-align: left;
     font-size: 0.85rem;
-    gap: 0.4rem;
     margin: 0;
+    margin-bottom: 1.25rem;
   }
 
   .form-label-accion {
@@ -1144,7 +1145,7 @@ body {
   }
 
   .titulo-calculo {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .resultado-conversion h2 {
