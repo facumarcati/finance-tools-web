@@ -22,128 +22,130 @@
       </div>
     </header>
     <main id="main">
-      <section class="container-titulo-simulador">
-        <div class="tituo-simulador">
-          <h1>Simulador de Cuotas</h1>
-          <h3>Calculá el valor mensual de una compra en cuotas</h3>
-        </div>
-      </section>
-      <section class="container-calculo-simulador">
-        <div class="container-titulo-calculo">
-          <h1 class="titulo-calculo">Simulador de cuotas</h1>
-        </div>
-        <div class="calculo-simulador-monto">
-          <h3>Monto total</h3>
-          <div class="form-field-icon">
-            <input
-              type="number"
-              id="amount"
-              class="form-control"
-              placeholder="Ingresa el monto"
-              min="0"
-              step="0.01"
-              required
-            />
+      <div class="container-simulador-cuotas">
+        <section class="container-titulo-simulador">
+          <div class="tituo-simulador">
+            <h1>Simulador de Cuotas</h1>
+            <h3>Calculá el valor mensual de una compra en cuotas</h3>
           </div>
-        </div>
-        <div class="calculo-simulador-interes">
-          <h3>Interes anual (%)</h3>
-          <div class="form-field-icon">
-            <input
-              type="number"
-              id="amount"
-              class="form-control"
-              placeholder="Ingresa el interes anual"
-              min="0"
-              step="0.01"
-              required
-            />
+        </section>
+        <section class="container-calculo-simulador">
+          <div class="container-titulo-calculo">
+            <h1 class="titulo-calculo">Simulador de cuotas</h1>
           </div>
-        </div>
-        <div class="calculo-simulador-tipo-interes">
-          <h3>Tipo de interés</h3>
-          <select id="payment" class="form-control" required>
-            <option value="cash">Simple</option>
-            <option value="debit">Compuesto</option>
-          </select>
-        </div>
-        <div class="calculo-simulador-cant-cuotas">
-          <h3>Cantidad de cuotas</h3>
-          <div class="form-field-icon">
-            <input
-              type="number"
-              id="amount"
-              class="form-control"
-              placeholder="Ingresa la cantidad de cuotas"
-              min="0"
-              step="0.01"
-              required
-            />
+          <div class="calculo-simulador-monto">
+            <h3>Monto total</h3>
+            <div class="form-field-icon">
+              <input
+                type="number"
+                id="amount"
+                class="form-control"
+                placeholder="Ingresa el monto"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div class="container-button-convertir">
-          <button type="button" class="btn btn-primary">Calcular</button>
-        </div>
-      </section>
-      <section class="container-resultado-simulador">
-        <div class="titulo-resultado-simulador">
-          <h2>Resultado del cálculo</h2>
-        </div>
-        <div class="montos-resultado-simulador">
+          <div class="calculo-simulador-interes">
+            <h3>Interes anual (%)</h3>
+            <div class="form-field-icon">
+              <input
+                type="number"
+                id="amount"
+                class="form-control"
+                placeholder="Ingresa el interes anual"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+          </div>
+          <div class="calculo-simulador-tipo-interes">
+            <h3>Tipo de interés</h3>
+            <select id="payment" class="form-control" required>
+              <option value="cash">Simple</option>
+              <option value="debit">Compuesto</option>
+            </select>
+          </div>
+          <div class="calculo-simulador-cant-cuotas">
+            <h3>Cantidad de cuotas</h3>
+            <div class="form-field-icon">
+              <input
+                type="number"
+                id="amount"
+                class="form-control"
+                placeholder="Ingresa la cantidad de cuotas"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+          </div>
+          <div class="container-button-convertir">
+            <button type="button" class="btn btn-primary">Calcular</button>
+          </div>
+        </section>
+        <section class="container-resultado-simulador">
+          <div class="titulo-resultado-simulador">
+            <h2>Resultado del cálculo</h2>
+          </div>
+          <div class="montos-resultado-simulador">
+            <div>
+              <h3>Monto total:</h3>
+              <h3>$ XX.XX</h3>
+            </div>
+            <div>
+              <h3>Interés total aplicado:</h3>
+              <h3>$ XX.XX</h3>
+            </div>
+            <div>
+              <h3>Total a pagar:</h3>
+              <h3>$ XX.XX</h3>
+            </div>
+            <div>
+              <h3>Monto por cuota:</h3>
+              <h3>$ XX.XX</h3>
+            </div>
+          </div>
+        </section>
+        <section class="container-grafico-simulador">
+          <div class="container-titulo-grafico">
+            <h1 class="tituo-grafico">Grafico cuotas</h1>
+          </div>
           <div>
-            <h3>Monto total:</h3>
-            <h3>$ XX.XX</h3>
+            <h2 class="total-pagar-simulador">Total a pagar: $ 72.000</h2>
           </div>
-          <div>
-            <h3>Interés total aplicado:</h3>
-            <h3>$ XX.XX</h3>
+          <div class="progress-stacked">
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Segment one"
+              aria-valuenow="15"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 80%"
+            >
+              <div class="progress-bar capital">80%</div>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Segment two"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 20%"
+            >
+              <div class="progress-bar interes">20%</div>
+            </div>
           </div>
-          <div>
-            <h3>Total a pagar:</h3>
-            <h3>$ XX.XX</h3>
+          <div class="grafico-datos">
+            <h2>Capital - $ 60.000</h2>
+            <h2>Interes - $ 12.000</h2>
           </div>
-          <div>
-            <h3>Monto por cuota:</h3>
-            <h3>$ XX.XX</h3>
-          </div>
-        </div>
-      </section>
-      <section class="container-grafico-simulador">
-        <div class="container-titulo-grafico">
-          <h1 class="tituo-grafico">Grafico cuotas</h1>
-        </div>
-        <div>
-          <h2 class="total-pagar-simulador">Total a pagar: $ 72.000</h2>
-        </div>
-        <div class="progress-stacked">
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Segment one"
-            aria-valuenow="15"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 80%"
-          >
-            <div class="progress-bar capital">80%</div>
-          </div>
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Segment two"
-            aria-valuenow="30"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 20%"
-          >
-            <div class="progress-bar interes">20%</div>
-          </div>
-        </div>
-        <div class="grafico-datos">
-          <h2>Capital - $ 60.000</h2>
-          <h2>Interes - $ 12.000</h2>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <div>

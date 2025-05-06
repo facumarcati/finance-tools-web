@@ -22,146 +22,105 @@
       </div>
     </header>
     <main id="main">
-      <section class="month">
-        <h2>Mes:</h2>
-        <div class="custom-select-wrapper">
-          <select id="category" class="form-month" required>
-            <option value="" disabled selected>Seleccionar mes</option>
-            <option value="">Enero</option>
-            <option value="">Febrero</option>
-            <option value="">Marzo</option>
-            <option value="">Abril</option>
-            <option value="">Mayo</option>
-            <option value="">Junio</option>
-            <option value="">Julio</option>
-            <option value="">Agpsto</option>
-            <option value="">Septiembre</option>
-            <option value="">Octubre</option>
-            <option value="">Noviembre</option>
-            <option value="">Diciembre</option>
-          </select>
-        </div>
-      </section>
-      <div class="card">
-        <h2 class="card-title">Registrar nuevo movimiento</h2>
-        <form id="expense-form">
-          <div class="form-group">
-            <label for="date" class="form-label">Fecha</label>
-            <div class="form-field-icon">
-              <input
-                type="date"
-                id="date"
-                class="form-control"
-                placeholder="dd/mm/aaaa"
-                required
-              />
-            </div>
+      <div class="container-calculadora-gastos">
+        <section class="container-titulo-simulador">
+          <div class="tituo-simulador">
+            <h1>Calculadora de Gastos</h1>
+            <h3>Controlá y organizá tus finanzas personales</h3>
           </div>
-
-          <div class="form-group">
-            <label for="type" class="form-label">Ingreso/Gasto</label>
-            <select id="type" class="form-control" required>
-              <option value="" disabled selected>Seleccionar tipo</option>
-              <option value="income">Ingreso</option>
-              <option value="expense">Gasto</option>
+        </section>
+        <section class="month">
+          <h2>Mes:</h2>
+          <div class="custom-select-wrapper">
+            <select id="category" class="form-month" required>
+              <option value="" disabled selected>Seleccionar mes</option>
+              <option value="">Enero</option>
+              <option value="">Febrero</option>
+              <option value="">Marzo</option>
+              <option value="">Abril</option>
+              <option value="">Mayo</option>
+              <option value="">Junio</option>
+              <option value="">Julio</option>
+              <option value="">Agpsto</option>
+              <option value="">Septiembre</option>
+              <option value="">Octubre</option>
+              <option value="">Noviembre</option>
+              <option value="">Diciembre</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label for="category" class="form-label">Categoría</label>
-            <div class="custom-select-wrapper">
-              <select id="category" class="form-control" required>
-                <option value="" disabled selected>
-                  Seleccionar categoría
-                </option>
-                <option value="salary">Sueldo</option>
-                <option value="food">Alimentación</option>
-                <option value="transport">Transporte</option>
-                <option value="entertainment">Entretenimiento</option>
-                <option value="bills">Servicios</option>
-                <option value="health">Salud</option>
-                <option value="other">Otro</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="amount" class="form-label">Monto</label>
-            <div class="form-field-icon">
-              <input
-                type="number"
-                id="amount"
-                class="form-control"
-                placeholder="0.00"
-                min="0"
-                step="0.01"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="payment" class="form-label">Medio de pago</label>
-            <select id="payment" class="form-control" required>
-              <option value="" disabled selected>Seleccionar medio</option>
-              <option value="cash">Efectivo</option>
-              <option value="debit">Débito</option>
-              <option value="credit">Crédito</option>
-              <option value="transfer">Transferencia</option>
-            </select>
-          </div>
-
-          <div class="form-footer">
-            <button type="submit" class="btn btn-primary">
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-              Agregar
-            </button>
-          </div>
-        </form>
-      </div>
-      <div id="movimientos-recientes">
-        <h2 class="card-title">Movimientos recientes</h2>
-        <div class="container-movimientos">
-          <div class="movimientos ingreso">
-            <div class="movimiento">
+        </section>
+        <section class="container-cards">
+          <div class="card">
+            <h2 class="card-title">Registrar nuevo movimiento</h2>
+            <form id="expense-form">
               <div class="form-group">
                 <label for="date" class="form-label">Fecha</label>
-                <span class="detail-value">3/5/25</span>
+                <div class="form-field-icon">
+                  <input
+                    type="date"
+                    id="date"
+                    class="form-control"
+                    placeholder="dd/mm/aaaa"
+                    required
+                  />
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="type" class="form-label">Ingreso/Gasto</label>
-                <span class="detail-value">Ingreso</span>
+                <select id="type" class="form-control" required>
+                  <option value="" disabled selected>Seleccionar tipo</option>
+                  <option value="income">Ingreso</option>
+                  <option value="expense">Gasto</option>
+                </select>
               </div>
 
               <div class="form-group">
                 <label for="category" class="form-label">Categoría</label>
-                <span class="detail-value">Sueldo</span>
+                <div class="custom-select-wrapper">
+                  <select id="category" class="form-control" required>
+                    <option value="" disabled selected>
+                      Seleccionar categoría
+                    </option>
+                    <option value="salary">Sueldo</option>
+                    <option value="food">Alimentación</option>
+                    <option value="transport">Transporte</option>
+                    <option value="entertainment">Entretenimiento</option>
+                    <option value="bills">Servicios</option>
+                    <option value="health">Salud</option>
+                    <option value="other">Otro</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="amount" class="form-label">Monto</label>
-                <span class="detail-value">$1,137.00</span>
+                <div class="form-field-icon">
+                  <input
+                    type="number"
+                    id="amount"
+                    class="form-control"
+                    placeholder="0.00"
+                    min="0"
+                    step="0.01"
+                    required
+                  />
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="payment" class="form-label">Medio de pago</label>
-                <span class="detail-value">Débito</span>
+                <select id="payment" class="form-control" required>
+                  <option value="" disabled selected>Seleccionar medio</option>
+                  <option value="cash">Efectivo</option>
+                  <option value="debit">Débito</option>
+                  <option value="credit">Crédito</option>
+                  <option value="transfer">Transferencia</option>
+                </select>
               </div>
-              <div class="btn-movimientos">
-                <button class="btn btn-warning">
+
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary">
                   <svg
                     class="icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -172,141 +131,192 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path
-                      d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
-                    ></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
-                  Modificar
+                  Agregar
                 </button>
-                <button class="btn btn-danger">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="3 6 5 6 21 6"></polyline>
-                    <path
-                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                    ></path>
-                  </svg>
-                  Eliminar
-                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div id="movimientos-recientes">
+          <h2 class="card-title">Movimientos recientes</h2>
+          <div class="container-movimientos">
+            <div class="movimientos ingreso">
+              <div class="movimiento">
+                <div class="form-group">
+                  <label for="date" class="form-label">Fecha</label>
+                  <span class="detail-value">3/5/25</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="type" class="form-label">Ingreso/Gasto</label>
+                  <span class="detail-value">Ingreso</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="category" class="form-label">Categoría</label>
+                  <span class="detail-value">Sueldo</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="amount" class="form-label">Monto</label>
+                  <span class="detail-value">$1,137.00</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="payment" class="form-label">Medio de pago</label>
+                  <span class="detail-value">Débito</span>
+                </div>
+                <div class="btn-movimientos">
+                  <button class="btn btn-warning">
+                    <svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                      ></path>
+                    </svg>
+                    Modificar
+                  </button>
+                  <button class="btn btn-danger">
+                    <svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path
+                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                      ></path>
+                    </svg>
+                    Eliminar
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="movimientos gasto">
-            <div class="movimiento">
-              <div class="form-group">
-                <label for="date" class="form-label">Fecha</label>
-                <span class="detail-value">4/5/25</span>
-              </div>
+            <div class="movimientos gasto">
+              <div class="movimiento">
+                <div class="form-group">
+                  <label for="date" class="form-label">Fecha</label>
+                  <span class="detail-value">4/5/25</span>
+                </div>
 
-              <div class="form-group">
-                <label for="type" class="form-label">Ingreso/Gasto</label>
-                <span class="detail-value">Gasto</span>
-              </div>
+                <div class="form-group">
+                  <label for="type" class="form-label">Ingreso/Gasto</label>
+                  <span class="detail-value">Gasto</span>
+                </div>
 
-              <div class="form-group">
-                <label for="category" class="form-label">Categoría</label>
-                <span class="detail-value">Alimentación</span>
-              </div>
+                <div class="form-group">
+                  <label for="category" class="form-label">Categoría</label>
+                  <span class="detail-value">Alimentación</span>
+                </div>
 
-              <div class="form-group">
-                <label for="amount" class="form-label">Monto</label>
-                <span class="detail-value">$45.60</span>
-              </div>
+                <div class="form-group">
+                  <label for="amount" class="form-label">Monto</label>
+                  <span class="detail-value">$45.60</span>
+                </div>
 
-              <div class="form-group">
-                <label for="payment" class="form-label">Medio de pago</label>
-                <span class="detail-value">Efectivo</span>
-              </div>
-              <div class="btn-movimientos">
-                <button class="btn btn-warning">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
-                    ></path>
-                  </svg>
-                  Modificar
-                </button>
-                <button class="btn btn-danger">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="3 6 5 6 21 6"></polyline>
-                    <path
-                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                    ></path>
-                  </svg>
-                  Eliminar
-                </button>
+                <div class="form-group">
+                  <label for="payment" class="form-label">Medio de pago</label>
+                  <span class="detail-value">Efectivo</span>
+                </div>
+                <div class="btn-movimientos">
+                  <button class="btn btn-warning">
+                    <svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                      ></path>
+                    </svg>
+                    Modificar
+                  </button>
+                  <button class="btn btn-danger">
+                    <svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path
+                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                      ></path>
+                    </svg>
+                    Eliminar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <section class="container-total">
+          <div class="total">
+            <h2 class="total-title">Total sobrante: $2274</h2>
+          </div>
+        </section>
+        <section class="container-grafico-gastos">
+          <div class="grafico-gastos-titulo">
+            <h2>Distribución de gastos por categoría</h2>
+          </div>
+          <div class="categories-card">
+            <div class="category">
+              <div class="category-name">
+                <span>Comida</span>
+                <span>40%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-categoria" style="width: 40%"></div>
+              </div>
+            </div>
+
+            <div class="category">
+              <div class="category-name">
+                <span>Transporte</span>
+                <span>30%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-categoria" style="width: 30%"></div>
+              </div>
+            </div>
+
+            <div class="category">
+              <div class="category-name">
+                <span>Servicios</span>
+                <span>30%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-categoria" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <section class="container-total">
-        <div class="total">
-          <h2 class="total-title">Total sobrante: $2274</h2>
-        </div>
-      </section>
-      <section class="container-grafico-gastos">
-        <div class="grafico-gastos-titulo">
-          <h2>Distribución de gastos por categoría</h2>
-        </div>
-        <div class="categories-card">
-          <div class="category">
-            <div class="category-name">
-              <span>Comida</span>
-              <span>40%</span>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar-categoria" style="width: 40%"></div>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="category-name">
-              <span>Transporte</span>
-              <span>30%</span>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar-categoria" style="width: 30%"></div>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="category-name">
-              <span>Servicios</span>
-              <span>30%</span>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar-categoria" style="width: 30%"></div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
     <footer id="footer">
       <div>

@@ -22,83 +22,91 @@
       </div>
     </header>
     <main id="main">
-      <section class="container-conversiones">
-        <div class="container-titulo-conversor">
-          <h1 class="titulo-calculo">Conversor de monedas</h1>
-        </div>
-        <div class="cantidad-conversion">
-          <h3>Cantidad:</h3>
-          <div class="cantidad-convertir">
-            <input
-              type="number"
-              id="amount"
-              class="form-control"
-              placeholder="0.00"
-              min="0"
-              step="0.01"
-              required
-            />
+      <div class="container-main-conversiones">
+        <section class="container-titulo-simulador">
+          <div class="tituo-simulador">
+            <h1>Conversor Financiero</h1>
+            <h3>Transformá monedas y valores en tiempo real</h3>
           </div>
-        </div>
-        <div class="tipo-conversion">
-          <h3>De:</h3>
-          <select id="type" class="form-control">
-            <option selected>[V] Moneda</option>
-            <option value="1">ARS</option>
-            <option value="2">USD</option>
-            <option value="3">EUR</option>
-          </select>
-        </div>
-        <div class="convertir-a">
-          <h3>A:</h3>
-          <select id="type" class="form-control">
-            <option selected>[V] Moneda</option>
-            <option value="1">ARS</option>
-            <option value="2">USD</option>
-            <option value="3">EUR</option>
-          </select>
-        </div>
-        <div class="container-button-convertir">
-          <button type="button" class="btn btn-primary">Convertir</button>
-        </div>
-      </section>
-      <section class="container-resultado-conversion">
-        <div class="resultado-conversion">
-          <h2>Conversion de moneda a moneda</h2>
-          <h3>$ XX.XX</h3>
-        </div>
-      </section>
-      <section class="container-tabla-valores-comunes">
-        <div class="title-tabla-valores">
-          <h2>Tabla de valores comunes</h2>
-        </div>
-        <div class="tabla-valores-comunes">
-          <div class="container-moneda">
-            <div class="title-moneda">
-              <h2>Moneda:</h2>
-              <h2>Dolar (USD)</h2>
+        </section>
+        <section class="container-conversiones">
+          <div class="container-titulo-conversor">
+            <h1 class="titulo-calculo">Conversor de monedas</h1>
+          </div>
+          <div class="cantidad-conversion">
+            <h3>Cantidad:</h3>
+            <div class="cantidad-convertir">
+              <input
+                type="number"
+                id="amount"
+                class="form-control-conversion"
+                placeholder="0.00"
+                min="0"
+                step="0.01"
+                required
+              />
             </div>
-            <h3>1 ARS = 0.0011</h3>
-            <h3>1 USD = 1200</h3>
           </div>
-          <div class="container-moneda">
-            <div class="title-moneda">
-              <h2>Moneda:</h2>
-              <h2>Euro (EUR)</h2>
+          <div class="tipo-conversion">
+            <h3>De:</h3>
+            <select id="type" class="form-control">
+              <option selected>[V] Moneda</option>
+              <option value="1">ARS</option>
+              <option value="2">USD</option>
+              <option value="3">EUR</option>
+            </select>
+          </div>
+          <div class="convertir-a">
+            <h3>A:</h3>
+            <select id="type" class="form-control">
+              <option selected>[V] Moneda</option>
+              <option value="1">ARS</option>
+              <option value="2">USD</option>
+              <option value="3">EUR</option>
+            </select>
+          </div>
+          <div class="container-button-convertir">
+            <button type="button" class="btn btn-primary">Convertir</button>
+          </div>
+        </section>
+        <section class="container-resultado-conversion">
+          <div class="resultado-conversion">
+            <h2>Conversion de moneda a moneda</h2>
+            <h3>$ XX.XX</h3>
+          </div>
+        </section>
+        <section class="container-tabla-valores-comunes">
+          <div class="title-tabla-valores">
+            <h2>Tabla de valores comunes</h2>
+          </div>
+          <div class="tabla-valores-comunes">
+            <div class="container-moneda">
+              <div class="title-moneda">
+                <h2>Moneda:</h2>
+                <h2>Dolar (USD)</h2>
+              </div>
+              <h3>1 ARS = 0.0011</h3>
+              <h3>1 USD = 1200</h3>
             </div>
-            <h3>1 ARS = 0.00095</h3>
-            <h3>1 USD = 1250</h3>
-          </div>
-          <div class="container-moneda">
-            <div class="title-moneda">
-              <h2>Moneda:</h2>
-              <h2>Real (BRL)</h2>
+            <div class="container-moneda">
+              <div class="title-moneda">
+                <h2>Moneda:</h2>
+                <h2>Euro (EUR)</h2>
+              </div>
+              <h3>1 ARS = 0.00095</h3>
+              <h3>1 USD = 1250</h3>
             </div>
-            <h3>1 ARS = 0.0052</h3>
-            <h3>1 BRL = 220</h3>
+            <div class="container-moneda">
+              <div class="title-moneda">
+                <h2>Moneda:</h2>
+                <h2>Real (BRL)</h2>
+              </div>
+              <h3>1 ARS = 0.0052</h3>
+              <h3>1 BRL = 220</h3>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <div>

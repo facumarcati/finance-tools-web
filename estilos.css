@@ -173,6 +173,15 @@ body {
   padding: 2rem 1rem;
 }
 
+.container-calculadora-gastos,
+.container-main-conversiones,
+.container-simulador-cuotas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .container-title-main {
   display: flex;
   flex-direction: column;
@@ -401,6 +410,10 @@ body {
   gap: 10px;
 }
 
+.container-cards {
+  width: 100%;
+}
+
 .card {
   width: 100%;
   background-color: var(--card-bg);
@@ -471,6 +484,17 @@ body {
 
 .form-control::placeholder {
   color: #6c757d;
+}
+
+.form-control-conversion {
+  width: 60%;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .form-month {
@@ -801,6 +825,8 @@ body {
 
 .cantidad-convertir {
   width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .drop-down {
@@ -840,7 +866,6 @@ body {
 .title-tabla-valores {
   display: flex;
   justify-content: center;
-  border: 1px solid var(--border-color);
   padding-bottom: 10px;
 }
 
@@ -883,7 +908,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .tituo-simulador {
@@ -996,6 +1021,10 @@ body {
 }
 
 @media (min-width: 992px) {
+  .container-title-main {
+    height: 40vh;
+  }
+
   .title-main {
     font-size: 6rem;
   }
@@ -1017,5 +1046,11 @@ body {
     width: 500px;
     height: auto;
     gap: 10px;
+  }
+
+  .container-calculadora-gastos,
+  .container-main-conversiones,
+  .container-simulador-cuotas {
+    padding: 0 24%;
   }
 }
