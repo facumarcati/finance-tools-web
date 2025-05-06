@@ -53,7 +53,7 @@
           <div class="card">
             <h2 class="card-title">Registrar nuevo movimiento</h2>
             <form id="expense-form">
-              <div class="form-group">
+              <div class="form-group-date">
                 <label for="date" class="form-label">Fecha</label>
                 <div class="form-field-icon">
                   <input
@@ -93,13 +93,13 @@
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-group-monto">
                 <label for="amount" class="form-label">Monto</label>
                 <div class="form-field-icon">
                   <input
                     type="number"
                     id="amount"
-                    class="form-control"
+                    class="form-control-monto"
                     placeholder="0.00"
                     min="0"
                     step="0.01"
@@ -140,7 +140,7 @@
             </form>
           </div>
         </section>
-        <div id="movimientos-recientes">
+        <div class="movimientos-recientes">
           <h2 class="card-title">Movimientos recientes</h2>
           <div class="container-movimientos">
             <div class="movimientos ingreso">
@@ -166,45 +166,50 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="payment" class="form-label">Medio de pago</label>
+                  <label for="payment" class="form-label medio-pago"
+                    >Medio de pago</label
+                  >
                   <span class="detail-value">Débito</span>
                 </div>
-                <div class="btn-movimientos">
-                  <button class="btn btn-warning">
-                    <svg
-                      class="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
-                      ></path>
-                    </svg>
-                    Modificar
-                  </button>
-                  <button class="btn btn-danger">
-                    <svg
-                      class="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polyline points="3 6 5 6 21 6"></polyline>
-                      <path
-                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      ></path>
-                    </svg>
-                    Eliminar
-                  </button>
+                <div>
+                  <label for="" class="form-label-accion">Accion</label>
+                  <div class="btn-movimientos">
+                    <button class="btn btn-warning">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                        ></path>
+                      </svg>
+                      Modificar
+                    </button>
+                    <button class="btn btn-danger">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path
+                          d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        ></path>
+                      </svg>
+                      Eliminar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -231,45 +236,51 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="payment" class="form-label">Medio de pago</label>
+                  <label for="payment" class="form-label medio-pago"
+                    >Medio de pago</label
+                  >
                   <span class="detail-value">Efectivo</span>
                 </div>
-                <div class="btn-movimientos">
-                  <button class="btn btn-warning">
-                    <svg
-                      class="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
-                      ></path>
-                    </svg>
-                    Modificar
-                  </button>
-                  <button class="btn btn-danger">
-                    <svg
-                      class="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polyline points="3 6 5 6 21 6"></polyline>
-                      <path
-                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                      ></path>
-                    </svg>
-                    Eliminar
-                  </button>
+
+                <div>
+                  <label for="" class="form-label-accion">Accion</label>
+                  <div class="btn-movimientos">
+                    <button class="btn btn-warning">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                        ></path>
+                      </svg>
+                      Modificar
+                    </button>
+                    <button class="btn btn-danger">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path
+                          d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        ></path>
+                      </svg>
+                      Eliminar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

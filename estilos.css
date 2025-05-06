@@ -424,7 +424,7 @@ body {
   animation: fadeIn 0.5s ease-in;
 }
 
-#movimientos-recientes {
+.movimientos-recientes {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -453,12 +453,22 @@ body {
   gap: 10px;
 }
 
-.form-group {
+.form-group,
+.form-group-date,
+.form-group-monto {
   margin-bottom: 1.25rem;
 }
 
 .form-label {
   display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.form-label-accion {
+  display: none;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   font-weight: 500;
@@ -484,6 +494,17 @@ body {
 
 .form-control::placeholder {
   color: #6c757d;
+}
+
+.form-control-monto {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .form-control-conversion {
@@ -596,14 +617,17 @@ body {
 
 .movimientos {
   background-color: var(--input-bg);
-  padding: 14px;
-  border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);
   border-left: 4px solid var(--primary-color);
   transition: all 0.2s ease;
+}
+
+.movimiento {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-movimientos {
@@ -1046,6 +1070,76 @@ body {
     width: 500px;
     height: auto;
     gap: 10px;
+  }
+
+  .container-calculadora-gastos,
+  .container-main-conversiones,
+  .container-simulador-cuotas {
+    padding: 0 10%;
+  }
+
+  .movimiento {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr auto;
+    gap: 0.1rem;
+  }
+
+  .movimientos {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+
+  .btn-movimientos {
+    height: auto;
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem; /* si querés que estén más cerca del contenido, bajá este valor */
+  }
+
+  .btn {
+    padding: 0.15rem 0.4rem;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    line-height: 1;
+    width: 90px;
+    height: 40px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 0.85rem;
+    gap: 0.4rem; /* Aumenta la separación entre label y span */
+    margin: 0;
+  }
+
+  .form-label-accion {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .detail-value {
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .movimiento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    gap: 0.1rem;
   }
 
   .container-calculadora-gastos,
