@@ -485,6 +485,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.form-month option {
+  min-width: auto;
+}
+
 .custom-select-wrapper {
   flex: 1;
   width: 100%;
@@ -722,6 +726,12 @@ body {
   height: 100%;
 }
 
+.progress-bar-categoria {
+  height: 100%;
+
+  background-color: var(--success-color);
+}
+
 .grafico-datos {
   display: flex;
   justify-content: space-between;
@@ -735,6 +745,10 @@ body {
 
 .interes {
   background-color: var(--danger-color);
+}
+
+.resto {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .container-conversiones {
@@ -981,24 +995,27 @@ body {
   font-size: 16px;
 }
 
-@media (min-width: 768px) {
-  /* En pantallas grandes */
-  .menu-desktop {
-    display: block;
+@media (min-width: 992px) {
+  .title-main {
+    font-size: 6rem;
   }
 
-  .menu-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  /* En pantallas pequeñas */
-  .menu-desktop {
-    display: none;
+  .tagline {
+    font-size: 1.5rem;
   }
 
-  .menu-mobile {
-    display: block;
+  .container-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px 40px 0 40px;
+    gap: 2rem;
+  }
+
+  .feature-card {
+    width: 500px;
+    height: auto;
+    gap: 10px;
   }
 }
