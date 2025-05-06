@@ -443,7 +443,7 @@ body {
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border-color);
-  color: var(--primary-color);
+  color: var(--text-muted);
 }
 
 .card-buttons {
@@ -540,10 +540,10 @@ body {
 }
 
 .btn {
-  padding: 0.75rem 1.2rem;
+  padding: 0.55rem 0.5rem;
   border-radius: 6px;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -680,7 +680,9 @@ body {
 
 .container-titulo-calculo {
   width: 100%;
-  padding: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-muted);
 }
 
 .titulo-calculo {
@@ -816,6 +818,15 @@ body {
   gap: 26px;
   padding: 14px;
   border-radius: 12px;
+}
+
+.container-titulo-conversor {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-muted);
 }
 
 .tipo-conversion h3,
@@ -978,6 +989,8 @@ body {
   flex-direction: column;
   gap: 8px;
   width: 70%;
+  color: var(--text-muted);
+  text-align: left;
 }
 
 .container-resultado-simulador {
@@ -994,6 +1007,8 @@ body {
 .titulo-resultado-simulador {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
 }
 
 .montos-resultado-simulador {
@@ -1111,7 +1126,7 @@ body {
 
   .btn {
     padding: 0.15rem 0.4rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
