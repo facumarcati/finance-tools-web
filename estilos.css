@@ -539,6 +539,26 @@ body {
   width: 100%;
 }
 
+.container-button-convertir {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-convertir {
+  padding: 0.15rem 0.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  line-height: 1;
+  width: 50%;
+  height: 40px;
+}
+
 .btn {
   padding: 0.55rem 0.5rem;
   border-radius: 6px;
@@ -659,23 +679,180 @@ body {
 .container-total {
   width: 100%;
   min-height: auto;
-}
-
-.total {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
+  padding: 1.5rem;
+  gap: 20px;
+}
+
+.total {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  margin-bottom: 0;
+  align-items: end;
+  padding-bottom: 10px;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .total h2 {
   font-size: 24px;
+}
+
+.total h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container-cards-finanzas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  height: 260px;
+}
+
+.card-finanzas {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.card-finanzas-ingreso {
+  border-left-color: var(--success-color);
+}
+
+.card-finanzas-gasto {
+  border-left-color: var(--danger-color);
+}
+
+.card-ingreso {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-total-ingreso {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.valor-monto {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.ingresos .valor-monto {
+  color: #4caf50;
+}
+
+.gastos .valor-monto {
+  color: #f44336;
+}
+
+.valor-info {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.barra-progreso-container {
+  margin-top: 10px;
+  position: relative;
+}
+
+.barra-titulo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.barra-progreso {
+  height: 8px;
+  background-color: #3a3a3a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barra-valor {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  border-radius: 4px;
+  width: 90.65%;
+}
+
+.container-balance-actual {
+  background: linear-gradient(135deg, #333333, #292929);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3a3a;
+}
+
+.balance-actual {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.balance-titulo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.balance-valor {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.balance-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.icon-calendar::before {
+  content: "📅";
+  margin-right: 5px;
+}
+
+.icon-up::before {
+  content: "↑";
+  color: #4caf50;
+}
+
+.icon-down::before {
+  content: "↓";
+  color: #f44336;
 }
 
 .container-titulo-calculo {
@@ -697,20 +874,21 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  padding: 12px;
+  padding: 1.5rem;
   gap: 10px;
 }
 
 .grafico-gastos-titulo {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: start;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .grafico-gastos-titulo h2 {
   font-size: 20px;
   margin-bottom: 0px;
   padding-bottom: 10px;
+  color: var(--text-muted);
 }
 
 .grafico-gastos-categorias {
@@ -745,7 +923,10 @@ body {
 .category-name {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b3b3b3;
 }
 
 .progress-container {
@@ -779,13 +960,11 @@ body {
 
 .progress-bar {
   height: 100%;
-  background-color: var(--success-color);
 }
 
 .progress-bar-categoria {
   height: 100%;
-
-  background-color: var(--success-color);
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
 }
 
 .grafico-datos {
@@ -794,6 +973,11 @@ body {
   padding-top: 6px;
   gap: 6px;
   text-align: center;
+}
+
+.grafico-datos > h2 {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .capital {
@@ -816,7 +1000,7 @@ body {
   border: 1px solid var(--border-color);
   width: 100%;
   gap: 26px;
-  padding: 14px;
+  padding: 1.5rem;
   border-radius: 12px;
 }
 
@@ -914,10 +1098,12 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .title-tabla-valores h2 {
   font-size: 20px;
+  color: var(--text-muted);
 }
 
 .tabla-valores-comunes {
@@ -932,7 +1118,17 @@ body {
   border-radius: 12px;
   font-size: 18px;
   border: 1px solid var(--border-color);
+  border-left: 4px solid #4caf50;
   background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container-moneda:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .container-moneda h2 {
@@ -945,7 +1141,13 @@ body {
 
 .title-moneda {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
+  padding-bottom: 10px;
+}
+
+.money {
+  border-bottom: 1px solid #3a3a3a;
 }
 
 .container-titulo-simulador {
@@ -1009,6 +1211,7 @@ body {
   justify-content: center;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
+  color: var(--text-muted);
 }
 
 .montos-resultado-simulador {
@@ -1034,20 +1237,19 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 14px;
+  padding: 1.5rem;
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   gap: 16px;
 }
 
-.container-grafico-simulador h2 {
-  font-size: 18px;
-}
-
 .container-titulo-grafico {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  color: var(--text-muted);
 }
 
 .tituo-grafico {
@@ -1055,7 +1257,11 @@ body {
 }
 
 .total-pagar-simulador {
+  display: flex;
+  justify-content: center;
   margin: 0;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 #footer {
@@ -1136,6 +1342,23 @@ body {
     height: 40px;
   }
 
+  .btn-convertir {
+    padding: 0.15rem 0.4rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    line-height: 1;
+    width: 100%;
+    height: 40px;
+  }
+
+  .container-button-convertir {
+    width: 100%;
+  }
+
   .form-group {
     display: flex;
     flex-direction: column;
@@ -1171,6 +1394,55 @@ body {
 
   .resultado-conversion h3 {
     font-size: 20px;
+  }
+
+  .container-cards-finanzas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+  }
+
+  .card-finanzas {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+  }
+
+  .card-finanzas-ingreso {
+    border-left-color: var(--success-color);
+  }
+
+  .card-finanzas-gasto {
+    border-left-color: var(--danger-color);
+  }
+
+  .card-ingreso {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-total-ingreso {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+  }
+
+  .tabla-valores-comunes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 14px;
   }
 }
 

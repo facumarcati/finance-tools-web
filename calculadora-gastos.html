@@ -284,11 +284,119 @@
                 </div>
               </div>
             </div>
+            <div class="movimientos gasto">
+              <div class="movimiento">
+                <div class="form-group">
+                  <label for="date" class="form-label">Fecha</label>
+                  <span class="detail-value">6/5/25</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="type" class="form-label">Ingreso/Gasto</label>
+                  <span class="detail-value">Gasto</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="category" class="form-label">Categoría</label>
+                  <span class="detail-value">Servicios</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="amount" class="form-label">Monto</label>
+                  <span class="detail-value">$60.73</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="payment" class="form-label medio-pago"
+                    >Medio de pago</label
+                  >
+                  <span class="detail-value">Débito</span>
+                </div>
+
+                <div>
+                  <label for="" class="form-label-accion">Accion</label>
+                  <div class="btn-movimientos">
+                    <button class="btn btn-warning">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                        ></path>
+                      </svg>
+                      Modificar
+                    </button>
+                    <button class="btn btn-danger">
+                      <svg
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path
+                          d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                        ></path>
+                      </svg>
+                      Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <section class="container-total">
           <div class="total">
-            <h2 class="total-title">Monto total: $1.091,40</h2>
+            <h2 class="total-title">Resumen Financiero</h2>
+            <h4><span class="icon-calendar"></span>Mayo 2025</h4>
+          </div>
+          <div class="container-cards-finanzas">
+            <div class="card-finanzas card-finanzas-ingreso">
+              <div class="card-ingreso ingresos">
+                <h3 class="card-total-ingreso">
+                  <span class="icon-up"></span>Total Ingresos
+                </h3>
+                <h2 class="valor-monto">$1,137.00</h2>
+                <h4 class="valor-info">1 transacción</h4>
+              </div>
+            </div>
+            <div class="card-finanzas card-finanzas-gasto">
+              <div class="card-ingreso gastos">
+                <h3 class="card-total-ingreso">
+                  <span class="icon-down"></span>Total Gastos
+                </h3>
+                <h2 class="valor-monto">$106,33</h2>
+                <h4 class="valor-info">2 transacciones</h4>
+              </div>
+            </div>
+          </div>
+          <div class="barra-progreso-container">
+            <div class="barra-titulo">
+              <h4>Distribución Ingresos/Gastos</h4>
+              <h4>90,65% disponible</h4>
+            </div>
+            <div class="barra-progreso">
+              <div class="barra-valor"></div>
+            </div>
+          </div>
+          <div class="container-balance-actual">
+            <div class="balance-actual">
+              <h3 class="balance-titulo">BALANCE ACTUAL</h3>
+              <h1 class="balance-valor">$1,030.67</h1>
+              <h5 class="balance-info">Actualizado 7 de mayo, 2025</h5>
+            </div>
           </div>
         </section>
         <section class="container-grafico-gastos">
@@ -298,31 +406,21 @@
           <div class="categories-card">
             <div class="category">
               <div class="category-name">
-                <span>Comida</span>
-                <span>40%</span>
+                <span>Alimentación</span>
+                <span>4,01%</span>
               </div>
               <div class="progress-container">
-                <div class="progress-bar-categoria" style="width: 40%"></div>
-              </div>
-            </div>
-
-            <div class="category">
-              <div class="category-name">
-                <span>Transporte</span>
-                <span>30%</span>
-              </div>
-              <div class="progress-container">
-                <div class="progress-bar-categoria" style="width: 30%"></div>
+                <div class="progress-bar-categoria" style="width: 4.01%"></div>
               </div>
             </div>
 
             <div class="category">
               <div class="category-name">
                 <span>Servicios</span>
-                <span>30%</span>
+                <span>5,34%</span>
               </div>
               <div class="progress-container">
-                <div class="progress-bar-categoria" style="width: 30%"></div>
+                <div class="progress-bar-categoria" style="width: 5.34%"></div>
               </div>
             </div>
           </div>
