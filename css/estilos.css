@@ -723,6 +723,12 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   border-left: 4px solid var(--primary-color);
   border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.card-finanzas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card-finanzas-ingreso {
@@ -794,7 +800,7 @@ body {
   height: 100%;
   background: linear-gradient(90deg, #4caf50, #8bc34a);
   border-radius: 4px;
-  width: 90.65%;
+  width: 76.93%;
 }
 
 .container-balance-actual {
@@ -936,6 +942,13 @@ body {
   overflow: hidden;
 }
 
+.container-progress-stacked {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 6px;
+}
+
 .progress-stacked {
   width: 100%;
   display: flex;
@@ -959,7 +972,7 @@ body {
 }
 
 .progress-bar {
-  height: 100%;
+  height: 20px;
 }
 
 .progress-bar-categoria {
@@ -967,21 +980,95 @@ body {
   background: linear-gradient(90deg, #4caf50, #8bc34a);
 }
 
-.grafico-datos {
+.container-grafico-datos {
   display: flex;
   justify-content: space-between;
   padding-top: 6px;
   gap: 6px;
   text-align: center;
+  width: 100%;
 }
 
-.grafico-datos > h2 {
+.grafico-datos {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.grafico-datos-interes {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.grafico-datos-interes h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.grafico-datos h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.container-datos-grafico {
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.grafico-montos {
+  width: 100%;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grafico-monto-titulo {
   font-size: 16px;
   font-weight: 400;
 }
 
-.capital {
+.grafico-monto-total {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.circulo-capital {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  top: 6px;
   background-color: var(--success-color);
+  width: 10px;
+  height: 10px;
+}
+
+.circulo-interes {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  top: 6px;
+  background-color: var(--danger-color);
+  width: 10px;
+  height: 10px;
+}
+
+.grafico-capital {
+  color: var(--success-color);
+}
+
+.grafico-interes {
+  color: var(--danger-color);
+}
+
+.capital {
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
 }
 
 .interes {
@@ -1146,8 +1233,16 @@ body {
   padding-bottom: 10px;
 }
 
+.moneda {
+  font-weight: 400;
+}
+
 .money {
   border-bottom: 1px solid #3a3a3a;
+}
+
+.divisa {
+  font-weight: 200;
 }
 
 .container-titulo-simulador {
@@ -1197,6 +1292,7 @@ body {
 
 .container-resultado-simulador {
   width: 100%;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   padding: 14px;
@@ -1214,23 +1310,62 @@ body {
   color: var(--text-muted);
 }
 
-.montos-resultado-simulador {
+.container-cards-cuotas {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-bottom: 10px;
+  min-height: auto;
+  gap: 16px;
 }
 
-.montos-resultado-simulador h3 {
-  font-size: 18px;
-}
-
-.montos-resultado-simulador div {
+.card-cuota {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #333333, #292929);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 0.5rem 30px;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 4px solid var(--success-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.card-cuota:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-card {
+  font-size: 18px;
+  font-weight: 500;
+  color: #b3b3b3;
+}
+
+.monto-card {
+  font-size: 28px;
+}
+
+.footer-card {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.card-cuota:nth-child(1) .monto-card {
+  color: #64b3f4;
+}
+
+.card-cuota:nth-child(2) .monto-card {
+  color: #f4a261;
+}
+
+.card-cuota:nth-child(3) .monto-card {
+  color: #8bc34a;
+}
+
+.card-cuota:nth-child(4) .monto-card {
+  color: #ba68c8;
 }
 
 .container-grafico-simulador {
@@ -1249,6 +1384,7 @@ body {
   justify-content: center;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
+
   color: var(--text-muted);
 }
 
@@ -1261,7 +1397,7 @@ body {
   justify-content: center;
   margin: 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #footer {
@@ -1308,7 +1444,7 @@ body {
   .container-calculadora-gastos,
   .container-main-conversiones,
   .container-simulador-cuotas {
-    padding: 0 10%;
+    padding: 0 12%;
   }
 
   .movimiento {
@@ -1355,8 +1491,22 @@ body {
     height: 40px;
   }
 
+  .btn-calcular {
+    padding: 0.15rem 0.4rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    line-height: 1;
+    width: 30%;
+    height: 40px;
+  }
+
   .container-button-convertir {
     width: 100%;
+    padding-top: 10px;
   }
 
   .form-group {
@@ -1439,6 +1589,13 @@ body {
   }
 
   .tabla-valores-comunes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 14px;
+  }
+
+  .container-cards-cuotas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
