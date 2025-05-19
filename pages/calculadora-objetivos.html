@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>Financify - Calculadora objetivos</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="../index.html" class="site-logo"> Financify </a>
+      <div class="menu-dropdown">
+        <button class="menu-button">Menú <span>▼</span></button>
+        <div class="menu-content">
+          <a href="../index.html" class="menu-item">Inicio</a>
+          <a href=".calculadora-gastos.html" class="menu-item">Calculadora</a>
+          <a href="./conversiones.html" class="menu-item">Conversor</a>
+          <a href="./simulador-cuotas.html" class="menu-item"
+            >Simulador cuotas</a
+          >
+          <a href="./tracker-mercado.html" class="menu-item">Tracker mercado</a>
+          <a href="./calculadora-objetivos.html" class="menu-item"
+            >Calculadora objetivos financieros</a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="container-titulo-simulador">
+        <div class="tituo-simulador">
+          <h1>Calculadora de Objetivos Financieros</h1>
+          <h3>Planifica tus metas de ahorro y calcula cómo alcanzarlas</h3>
+        </div>
+      </section>
+      <section class="container-objetivos-ahorro">
+        <span class="titulo-objetivos-ahorro">Objetivos de ahorro</span>
+        <div class="container-tipos-objetivos-ahorro">
+          <div class="objetivo-ahorro obj-seleccionado">
+            <span class="icono-tipo-objetivo-ahorro">🏠</span>
+            <span class="titulo-tipo-objetivo-ahorro">Vivienda</span>
+          </div>
+          <div class="objetivo-ahorro">
+            <span class="icono-tipo-objetivo-ahorro">🚗</span>
+            <span class="titulo-tipo-objetivo-ahorro">Vehiculo</span>
+          </div>
+          <div class="objetivo-ahorro">
+            <span class="icono-tipo-objetivo-ahorro">✈️</span>
+            <span class="titulo-tipo-objetivo-ahorro">Viaje</span>
+          </div>
+          <div class="objetivo-ahorro">
+            <span class="icono-tipo-objetivo-ahorro">🎓</span>
+            <span class="titulo-tipo-objetivo-ahorro">Educación</span>
+          </div>
+          <div class="objetivo-ahorro">
+            <span class="icono-tipo-objetivo-ahorro">⚙️</span>
+            <span class="titulo-tipo-objetivo-ahorro">Personalizado</span>
+          </div>
+        </div>
+        <div class="container-inputs-objetivos-ahorro">
+          <div class="input-objetivo-ahorro">
+            <span>Nombre del objetivo</span>
+            <input type="text" placeholder="Ingrese el nombre del objetivo " />
+          </div>
+          <div class="input-objetivo-ahorro">
+            <span>Monto objetivo ($)</span>
+            <input type="number" placeholder="Ingrese el monto a alcanzar" />
+          </div>
+          <div class="input-objetivo-ahorro">
+            <span>Nombre del objetivo</span>
+            <input type="number" placeholder="Cantidad inicial disponible" />
+          </div>
+          <div class="input-objetivo-ahorro">
+            <span>Plazo de tiempo (meses)</span>
+            <input
+              type="number"
+              placeholder="Cantidad de meses para alcanzar el objetivo"
+            />
+          </div>
+          <div class="input-objetivo-ahorro">
+            <span>Rendimiento anual estimado (%)</span>
+            <input
+              type="number"
+              placeholder="Rendimiento anual de la inversión"
+            />
+          </div>
+        </div>
+        <div class="container-calcular-objetivo-ahorro">
+          <button class="btn-calcular btn-primary">Calcular</button>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div>
+        <h3>© 2025 Financify - Todos los derechos reservados</h3>
+      </div>
+    </footer>
+  </body>
+</html>
