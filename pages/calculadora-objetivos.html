@@ -13,7 +13,7 @@
         <button class="menu-button">Menú <span>▼</span></button>
         <div class="menu-content">
           <a href="../index.html" class="menu-item">Inicio</a>
-          <a href=".calculadora-gastos.html" class="menu-item">Calculadora</a>
+          <a href="./calculadora-gastos.html" class="menu-item">Calculadora</a>
           <a href="./conversiones.html" class="menu-item">Conversor</a>
           <a href="./simulador-cuotas.html" class="menu-item"
             >Simulador cuotas</a
@@ -83,9 +83,45 @@
               placeholder="Rendimiento anual de la inversión"
             />
           </div>
+          <div class="input-objetivo-ahorro">
+            <span>Sueldo mensual ($) </span>
+            <input type="number" placeholder="Ingresa tu sueldo mensual" />
+          </div>
         </div>
         <div class="container-calcular-objetivo-ahorro">
           <button class="btn-calcular btn-primary">Calcular</button>
+        </div>
+      </section>
+      <section class="container-resultado-simulador">
+        <div class="titulo-resultado-simulador">
+          <h2>Resultado del cálculo</h2>
+        </div>
+        <div class="container-cards-cuotas">
+          <div class="card-cuota">
+            <h3 class="titulo-card">Ahorro</h3>
+            <h2 class="monto-card">$ 3,500</h2>
+            <h5 class="footer-card">Ahorro mensual necesario</h5>
+          </div>
+          <div class="card-cuota">
+            <h3 class="titulo-card">Monto</h3>
+            <h2 class="monto-card">$ 250,000</h2>
+            <h5 class="footer-card">Monto objetivo</h5>
+          </div>
+          <div class="card-cuota">
+            <h3 class="titulo-card">Aporte</h3>
+            <h2 class="monto-card">$ 50,000</h2>
+            <h5 class="footer-card">Aporte inicial</h5>
+          </div>
+          <div class="card-cuota">
+            <h3 class="titulo-card">Interés</h3>
+            <h2 class="monto-card">$ 24,500</h2>
+            <h5 class="footer-card">Interés generado</h5>
+          </div>
+          <div class="card-cuota">
+            <h3 class="titulo-card">Sueldo</h3>
+            <h2 class="monto-card">17.5%</h2>
+            <h5 class="footer-card">Porcentaje del sueldo</h5>
+          </div>
         </div>
       </section>
     </main>
