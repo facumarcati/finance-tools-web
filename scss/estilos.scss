@@ -270,6 +270,10 @@ body {
   border-left-color: #9b59b6;
 }
 
+.feature-card.objetives-calculator {
+  border-left-color: #ffa500;
+}
+
 .feature-header {
   display: flex;
   align-items: center;
@@ -368,6 +372,16 @@ body {
 
 .tracker .feature-button:hover {
   background-color: rgba(155, 89, 182, 0.25);
+}
+
+.objetives-calculator .feature-button {
+  background-color: #683d1a; /* igual que el fondo de la card */
+  border: 1px solid #ffa94d; /* naranja suave */
+  color: white;
+}
+
+.objetives-calculator .feature-button:hover {
+  background-color: #9e6835;
 }
 
 .month {
