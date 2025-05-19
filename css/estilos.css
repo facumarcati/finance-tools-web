@@ -1378,6 +1378,10 @@ body {
   color: #ba68c8;
 }
 
+.card-cuota:nth-child(5) .monto-card {
+  color: var(--danger-color);
+}
+
 .container-grafico-simulador {
   width: 100%;
   display: flex;
@@ -1572,7 +1576,7 @@ body {
   gap: 4px;
 }
 .container-objetivos-ahorro .container-inputs-objetivos-ahorro .input-objetivo-ahorro span {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 400;
 }
 .container-objetivos-ahorro .container-inputs-objetivos-ahorro .input-objetivo-ahorro input {
@@ -1581,7 +1585,7 @@ body {
   height: 40px;
   border-radius: 6px;
   padding-left: 8px;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 .container-objetivos-ahorro .container-calcular-objetivo-ahorro {
