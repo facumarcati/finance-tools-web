@@ -1008,6 +1008,11 @@ body {
   background: linear-gradient(90deg, #4caf50, #8bc34a);
 }
 
+.progress-bar-presupuesto {
+  height: 100%;
+  background: var(--danger-color);
+}
+
 .container-grafico-datos {
   display: flex;
   justify-content: space-between;
@@ -1323,7 +1328,7 @@ body {
   min-height: auto;
   display: flex;
   flex-direction: column;
-  padding: 14px;
+  padding: 30px;
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -1534,89 +1539,97 @@ body {
   }
 }
 
-.container-objetivos-ahorro {
+.container-calculadora-objetivo-financiero {
   width: 100%;
-  background-color: #252525;
-  border-radius: 12px;
-  padding: 20px;
-  .titulo-objetivos-ahorro {
-    font-size: 28px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-  .container-tipos-objetivos-ahorro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1;
-    gap: 20px;
-    padding-bottom: 20px;
-    .objetivo-ahorro {
-      background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .container-objetivos-ahorro {
+    width: 100%;
+    background-color: #252525;
+    border-radius: 12px;
+    padding: 20px;
+    .titulo-objetivos-ahorro {
+      font-size: 28px;
+      font-weight: 700;
       display: flex;
-      flex-direction: column;
-      flex: 1;
-      height: 120px;
-      align-items: center;
       justify-content: center;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      padding: 20px;
-      cursor: pointer;
-      .icono-tipo-objetivo-ahorro {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .container-tipos-objetivos-ahorro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex: 1;
+      gap: 20px;
+      padding-bottom: 20px;
+      .objetivo-ahorro {
         background-color: #333333;
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        height: 120px;
         align-items: center;
-        border-radius: 50%;
+        justify-content: center;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        padding: 20px;
+        cursor: pointer;
+        .icono-tipo-objetivo-ahorro {
+          background-color: #333333;
+          width: 60px;
+          height: 60px;
+          font-size: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+      }
+      .objetivo-ahorro:hover {
+        background-color: #444444;
+      }
+      .obj-seleccionado {
+        border: 2px solid var(--success-color);
       }
     }
-    .objetivo-ahorro:hover {
-      background-color: #444444;
-    }
-    .obj-seleccionado {
-      border: 2px solid var(--success-color);
-    }
-  }
-  .container-inputs-objetivos-ahorro {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    padding-bottom: 30px;
-    .input-objetivo-ahorro {
+    .container-inputs-objetivos-ahorro {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      span {
-        font-size: 17px;
-        font-weight: 400;
-      }
-      input {
-        background-color: #333333;
-        border: none;
-        height: 40px;
-        border-radius: 6px;
-        padding-left: 8px;
-        font-size: 14px;
-        color: white;
+      gap: 14px;
+      padding-bottom: 30px;
+      .input-objetivo-ahorro {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        span {
+          font-size: 17px;
+          font-weight: 400;
+        }
+        input {
+          background-color: #333333;
+          border: none;
+          height: 40px;
+          border-radius: 6px;
+          padding-left: 8px;
+          font-size: 14px;
+          color: white;
+        }
       }
     }
-  }
-  .container-calcular-objetivo-ahorro {
-    width: 100%;
-    .btn-calcular {
+    .container-calcular-objetivo-ahorro {
       width: 100%;
-      height: 40px;
-      border: none;
-      font-size: 16px;
-      font-weight: 500;
+      .btn-calcular {
+        width: 100%;
+        height: 40px;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -1664,7 +1677,8 @@ body {
 
   .container-calculadora-gastos,
   .container-main-conversiones,
-  .container-simulador-cuotas {
+  .container-simulador-cuotas,
+  .container-calculadora-objetivo-financiero {
     padding: 0 12%;
   }
 

@@ -26,104 +26,133 @@
       </div>
     </header>
     <main id="main">
-      <section class="container-titulo-simulador">
-        <div class="tituo-simulador">
-          <h1>Calculadora de Objetivos Financieros</h1>
-          <h3>Planifica tus metas de ahorro y calcula cómo alcanzarlas</h3>
-        </div>
-      </section>
-      <section class="container-objetivos-ahorro">
-        <span class="titulo-objetivos-ahorro">Objetivos de ahorro</span>
-        <div class="container-tipos-objetivos-ahorro">
-          <div class="objetivo-ahorro obj-seleccionado">
-            <span class="icono-tipo-objetivo-ahorro">🏠</span>
-            <span class="titulo-tipo-objetivo-ahorro">Vivienda</span>
+      <div class="container-calculadora-objetivo-financiero">
+        <section class="container-titulo-simulador">
+          <div class="tituo-simulador">
+            <h1>Calculadora de Objetivos Financieros</h1>
+            <h3>Planifica tus metas de ahorro y calcula cómo alcanzarlas</h3>
           </div>
-          <div class="objetivo-ahorro">
-            <span class="icono-tipo-objetivo-ahorro">🚗</span>
-            <span class="titulo-tipo-objetivo-ahorro">Vehiculo</span>
+        </section>
+        <section class="container-objetivos-ahorro">
+          <span class="titulo-objetivos-ahorro">Objetivos de ahorro</span>
+          <div class="container-tipos-objetivos-ahorro">
+            <div class="objetivo-ahorro obj-seleccionado">
+              <span class="icono-tipo-objetivo-ahorro">🏠</span>
+              <span class="titulo-tipo-objetivo-ahorro">Vivienda</span>
+            </div>
+            <div class="objetivo-ahorro">
+              <span class="icono-tipo-objetivo-ahorro">🚗</span>
+              <span class="titulo-tipo-objetivo-ahorro">Vehiculo</span>
+            </div>
+            <div class="objetivo-ahorro">
+              <span class="icono-tipo-objetivo-ahorro">✈️</span>
+              <span class="titulo-tipo-objetivo-ahorro">Viaje</span>
+            </div>
+            <div class="objetivo-ahorro">
+              <span class="icono-tipo-objetivo-ahorro">🎓</span>
+              <span class="titulo-tipo-objetivo-ahorro">Educación</span>
+            </div>
+            <div class="objetivo-ahorro">
+              <span class="icono-tipo-objetivo-ahorro">⚙️</span>
+              <span class="titulo-tipo-objetivo-ahorro">Personalizado</span>
+            </div>
           </div>
-          <div class="objetivo-ahorro">
-            <span class="icono-tipo-objetivo-ahorro">✈️</span>
-            <span class="titulo-tipo-objetivo-ahorro">Viaje</span>
+          <div class="container-inputs-objetivos-ahorro">
+            <div class="input-objetivo-ahorro">
+              <span>Nombre del objetivo</span>
+              <input
+                type="text"
+                placeholder="Ingrese el nombre del objetivo "
+              />
+            </div>
+            <div class="input-objetivo-ahorro">
+              <span>Monto objetivo ($)</span>
+              <input type="number" placeholder="Ingrese el monto a alcanzar" />
+            </div>
+            <div class="input-objetivo-ahorro">
+              <span>Nombre del objetivo</span>
+              <input type="number" placeholder="Cantidad inicial disponible" />
+            </div>
+            <div class="input-objetivo-ahorro">
+              <span>Plazo de tiempo (meses)</span>
+              <input
+                type="number"
+                placeholder="Cantidad de meses para alcanzar el objetivo"
+              />
+            </div>
+            <div class="input-objetivo-ahorro">
+              <span>Rendimiento anual estimado (%)</span>
+              <input
+                type="number"
+                placeholder="Rendimiento anual de la inversión"
+              />
+            </div>
+            <div class="input-objetivo-ahorro">
+              <span>Sueldo mensual ($) </span>
+              <input type="number" placeholder="Ingresa tu sueldo mensual" />
+            </div>
           </div>
-          <div class="objetivo-ahorro">
-            <span class="icono-tipo-objetivo-ahorro">🎓</span>
-            <span class="titulo-tipo-objetivo-ahorro">Educación</span>
+          <div class="container-calcular-objetivo-ahorro">
+            <button class="btn-calcular btn-primary">Calcular</button>
           </div>
-          <div class="objetivo-ahorro">
-            <span class="icono-tipo-objetivo-ahorro">⚙️</span>
-            <span class="titulo-tipo-objetivo-ahorro">Personalizado</span>
+        </section>
+        <section class="container-resultado-simulador">
+          <div class="titulo-resultado-simulador">
+            <h2>Resultado del cálculo</h2>
           </div>
-        </div>
-        <div class="container-inputs-objetivos-ahorro">
-          <div class="input-objetivo-ahorro">
-            <span>Nombre del objetivo</span>
-            <input type="text" placeholder="Ingrese el nombre del objetivo " />
+          <div class="container-cards-cuotas">
+            <div class="card-cuota">
+              <h3 class="titulo-card">Ahorro</h3>
+              <h2 class="monto-card">$ 3,500</h2>
+              <h5 class="footer-card">Ahorro mensual necesario</h5>
+            </div>
+            <div class="card-cuota">
+              <h3 class="titulo-card">Monto</h3>
+              <h2 class="monto-card">$ 250,000</h2>
+              <h5 class="footer-card">Monto objetivo</h5>
+            </div>
+            <div class="card-cuota">
+              <h3 class="titulo-card">Aporte</h3>
+              <h2 class="monto-card">$ 50,000</h2>
+              <h5 class="footer-card">Aporte inicial</h5>
+            </div>
+            <div class="card-cuota">
+              <h3 class="titulo-card">Interés</h3>
+              <h2 class="monto-card">$ 24,500</h2>
+              <h5 class="footer-card">Interés generado</h5>
+            </div>
+            <div class="card-cuota">
+              <h3 class="titulo-card">Sueldo</h3>
+              <h2 class="monto-card">17.5%</h2>
+              <h5 class="footer-card">Porcentaje del sueldo</h5>
+            </div>
           </div>
-          <div class="input-objetivo-ahorro">
-            <span>Monto objetivo ($)</span>
-            <input type="number" placeholder="Ingrese el monto a alcanzar" />
+          <div class="categories-card">
+            <div class="category">
+              <div class="category-name">
+                <span>Progreso actual hacia tu objetivo:</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-categoria" style="width: 65%"></div>
+              </div>
+            </div>
+
+            <div class="category">
+              <div class="category-name">
+                <span>Impacto en tu presupuesto mensual:</span>
+                <span>17.5%</span>
+              </div>
+              <div class="progress-container">
+                <div
+                  class="progress-bar-presupuesto"
+                  style="width: 17.5%"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div class="input-objetivo-ahorro">
-            <span>Nombre del objetivo</span>
-            <input type="number" placeholder="Cantidad inicial disponible" />
-          </div>
-          <div class="input-objetivo-ahorro">
-            <span>Plazo de tiempo (meses)</span>
-            <input
-              type="number"
-              placeholder="Cantidad de meses para alcanzar el objetivo"
-            />
-          </div>
-          <div class="input-objetivo-ahorro">
-            <span>Rendimiento anual estimado (%)</span>
-            <input
-              type="number"
-              placeholder="Rendimiento anual de la inversión"
-            />
-          </div>
-          <div class="input-objetivo-ahorro">
-            <span>Sueldo mensual ($) </span>
-            <input type="number" placeholder="Ingresa tu sueldo mensual" />
-          </div>
-        </div>
-        <div class="container-calcular-objetivo-ahorro">
-          <button class="btn-calcular btn-primary">Calcular</button>
-        </div>
-      </section>
-      <section class="container-resultado-simulador">
-        <div class="titulo-resultado-simulador">
-          <h2>Resultado del cálculo</h2>
-        </div>
-        <div class="container-cards-cuotas">
-          <div class="card-cuota">
-            <h3 class="titulo-card">Ahorro</h3>
-            <h2 class="monto-card">$ 3,500</h2>
-            <h5 class="footer-card">Ahorro mensual necesario</h5>
-          </div>
-          <div class="card-cuota">
-            <h3 class="titulo-card">Monto</h3>
-            <h2 class="monto-card">$ 250,000</h2>
-            <h5 class="footer-card">Monto objetivo</h5>
-          </div>
-          <div class="card-cuota">
-            <h3 class="titulo-card">Aporte</h3>
-            <h2 class="monto-card">$ 50,000</h2>
-            <h5 class="footer-card">Aporte inicial</h5>
-          </div>
-          <div class="card-cuota">
-            <h3 class="titulo-card">Interés</h3>
-            <h2 class="monto-card">$ 24,500</h2>
-            <h5 class="footer-card">Interés generado</h5>
-          </div>
-          <div class="card-cuota">
-            <h3 class="titulo-card">Sueldo</h3>
-            <h2 class="monto-card">17.5%</h2>
-            <h5 class="footer-card">Porcentaje del sueldo</h5>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer id="footer">
       <div>
