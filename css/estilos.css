@@ -1664,7 +1664,8 @@ body {
   .container-calculadora-gastos,
   .container-main-conversiones,
   .container-simulador-cuotas,
-  .container-calculadora-objetivo-financiero {
+  .container-calculadora-objetivo-financiero,
+  .container-tracker-mercado {
     padding: 0 12%;
   }
   .movimiento {
