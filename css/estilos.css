@@ -1484,6 +1484,7 @@ body {
   border: 1px solid #303030;
   border-radius: 12px;
   gap: 10px;
+  cursor: pointer;
 }
 .container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto .cripto-info {
   display: flex;
@@ -1492,10 +1493,13 @@ body {
 }
 .container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto .cripto-info .img-cripto {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   background-color: var(--text-muted);
-  border-radius: 8px;
+  border-radius: 50%;
+}
+.container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto .cripto-info .img-cripto img {
+  border-radius: 50%;
 }
 .container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto .cripto-info .cripto-name h2 {
   font-size: 24px;
@@ -1515,6 +1519,10 @@ body {
   color: var(--success-color);
   font-weight: 600;
 }
+.container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto .porcentaje-cripto-negativo {
+  color: var(--danger-color);
+  font-weight: 600;
+}
 .container-tracker-mercado .container-datos-criptomonedas .container-criptomonedas .cripto:hover {
   transform: translateY(-5px);
   border: 1px solid skyblue;
@@ -1525,7 +1533,9 @@ body {
   justify-content: center;
 }
 .container-tracker-mercado .container-btn-datos .btn-calcular {
-  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
   justify-content: center;
   align-items: center;
   height: 50px;
@@ -1655,6 +1665,8 @@ body {
     max-width: 100%;
     padding: 20px 40px 0 40px;
     gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   .feature-card {
     width: 500px;
@@ -1801,6 +1813,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     gap: 14px;
+  }
+  .container-tracker-mercado .container-btn-datos {
+    width: 100%;
+  }
+  .container-tracker-mercado .container-btn-datos .btn-calcular {
+    width: 30%;
   }
 }
 @media (min-width: 1600px) {
